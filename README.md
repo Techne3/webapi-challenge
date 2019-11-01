@@ -26,13 +26,24 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Mention two parts of Express that you learned about this week.
 
+    -  Express can write handlers to for different HTTP  request
+    -  Can  process middleware within the request pipeline
+
 - [ ] Describe Middleware?
+
+    Middleware is a response cycle that has access to request, response and next objects which can modify and execute the code. The code is executed in a cascading style with the top being executed first. 
 
 - [ ] Describe a Resource?
 
+     Resources are part of the REST structure. All content is including object, text, videos, and Html is considered to be a resource. These resources can be referred within the client-server and are identified by URI  (uniform resource Identifier).
+
 - [ ] What can the API return to help clients know if a request was successful?
 
+    API’s can return helpful hints such as the HTTP status code, which can tell the client whether  their request was successful or not. Api’s can all give messages and errors to help identify and send back information about the request.
+
 - [ ] How can we partition our application into sub-applications?
+
+   We can partition our applications into sub applications within node by breaking them into their own modules. Each modules can serve a specified purpose, functionality , or routes to make the code more maintainable and easier to navigate.
 
 ## Project Setup
 
