@@ -10,7 +10,7 @@ actions.get('/', (req,res)=>{
         res.json(data)
     })
     .catch(err => {
-        res.json({message: 'could not get acitons'})
+        res.json({message: 'could not get actions'})
     })
 })
 
@@ -76,7 +76,7 @@ function actionsVal(req,res,next) {
     if(!Object.keys(body).length){
         res.status(400).json({message: 'missing actions data'})
     }else if(!body.notes || !body.description || !body.project_id || !body.completed){
-        res.status(400).json({message: 'missing text field'})
+        res.status(400).json({message: 'missing items field: notes, description, project_id, or completed'})
     }else{
     
     next();
